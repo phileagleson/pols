@@ -3,5 +3,4 @@ pub mod completions;
 pub mod handlers;
 pub mod lsp;
 pub mod parser;
-pub mod ts;
 pub mod utils;

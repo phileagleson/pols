@@ -1,0 +1,184 @@
+2023-05-12 02:18:15 - INFO: goto_definition request received
+2023-05-12 02:18:15 - ERROR: error getting tree for uri: file:///home/phil/projects/poweron/ELA/ELA.PROJECT on line 42
+2023-05-12 02:18:15 - INFO: goto_definition result: None
+2023-05-12 02:18:51 - INFO: goto_definition request received
+2023-05-12 02:18:51 - ERROR: error getting tree for uri: file:///home/phil/projects/poweron/ELA/ELA.PROJECT on line 42
+2023-05-12 02:18:51 - INFO: goto_definition result: None
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.ACTBJS.RAW
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.PDF.APPREVIEW.DEF
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.PDF.APPREVIEW.PRO
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.SSNSEARCH.PRO
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.GENJS.RAW
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.LOANFUNDING
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.SHOWHIDEJS.RAW
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/SCANNER.GETVARS.PRO
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/SCANNER.GETVARS.DEF
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/POSTALAUTOMATION.PRO
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/POSTALAUTOMATION.DEF
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.PRINTDOCS
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.CSS
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.COMMON.PRO
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.DATEFORMATJS.RAW
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.COMMON.DEF
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.LIABILITIES
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/.git
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.OTHERACTIONS.PRO
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.OTHERACTIONS.DEF
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.PULLCRED
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.LOANCREATE
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.DECISION
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.FUNDINGINSTRUCTIONS
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.COLLATERAL
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.INIT
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.EFTXFRCREATE
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.ADDRESSVERIFY.PRO
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.JAVASCRIPTS.PRO
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.PDF.APPREVIEW
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.COSIGNER
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.APPLICANTINFO
+2023-05-12 02:22:59 - INFO: File path: /home/phil/projects/poweron/ELA/ELA.PROJECT
+2023-05-12 02:23:11 - INFO: goto_definition request received
+2023-05-12 02:23:11 - ERROR: error getting tree for uri: file:///home/phil/projects/poweron/ELA/ELA.PROJECT on line 42
+2023-05-12 02:23:11 - INFO: goto_definition result: None
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.ACTBJS.RAW
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PDF.APPREVIEW.DEF
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PDF.APPREVIEW.PRO
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.SSNSEARCH.PRO
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.GENJS.RAW
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.LOANFUNDING
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.SHOWHIDEJS.RAW
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/SCANNER.GETVARS.PRO
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/SCANNER.GETVARS.DEF
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/POSTALAUTOMATION.PRO
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/POSTALAUTOMATION.DEF
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PRINTDOCS
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.CSS
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.COMMON.PRO
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.DATEFORMATJS.RAW
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.COMMON.DEF
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.LIABILITIES
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.OTHERACTIONS.PRO
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.OTHERACTIONS.DEF
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PULLCRED
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.LOANCREATE
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.DECISION
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.FUNDINGINSTRUCTIONS
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.COLLATERAL
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.INIT
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.EFTXFRCREATE
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.ADDRESSVERIFY.PRO
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.JAVASCRIPTS.PRO
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PDF.APPREVIEW
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.COSIGNER
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.APPLICANTINFO
+2023-05-12 02:24:29 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PROJECT
+2023-05-12 02:24:35 - INFO: goto_definition request received
+2023-05-12 02:24:35 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.PROJECT", query: None, fragment: None }, range: Range { start: Position { line: 43, character: 1 }, end: Position { line: 43, character: 9 } } }]))
+2023-05-12 02:24:39 - INFO: goto_definition request received
+2023-05-12 02:24:39 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.PROJECT", query: None, fragment: None }, range: Range { start: Position { line: 45, character: 1 }, end: Position { line: 45, character: 12 } } }]))
+2023-05-12 02:24:42 - INFO: goto_definition request received
+2023-05-12 02:24:42 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.PROJECT", query: None, fragment: None }, range: Range { start: Position { line: 46, character: 1 }, end: Position { line: 46, character: 12 } } }]))
+2023-05-12 02:24:46 - INFO: goto_definition request received
+2023-05-12 02:24:46 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.PROJECT", query: None, fragment: None }, range: Range { start: Position { line: 46, character: 1 }, end: Position { line: 46, character: 12 } } }]))
+2023-05-12 02:24:52 - INFO: goto_definition request received
+2023-05-12 02:24:52 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.PROJECT", query: None, fragment: None }, range: Range { start: Position { line: 1824, character: 10 }, end: Position { line: 1824, character: 27 } } }]))
+2023-05-12 02:24:57 - INFO: goto_definition request received
+2023-05-12 02:24:57 - INFO: goto_definition result: Some(Array([]))
+2023-05-12 02:25:01 - INFO: goto_definition request received
+2023-05-12 02:25:02 - INFO: goto_definition result: Some(Array([]))
+2023-05-12 02:25:06 - INFO: goto_definition request received
+2023-05-12 02:25:06 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.PROJECT", query: None, fragment: None }, range: Range { start: Position { line: 1688, character: 10 }, end: Position { line: 1688, character: 29 } } }]))
+2023-05-12 02:25:14 - INFO: goto_definition request received
+2023-05-12 02:25:15 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.PRO", query: None, fragment: None }, range: Range { start: Position { line: 909, character: 10 }, end: Position { line: 909, character: 34 } } }]))
+2023-05-12 02:25:26 - INFO: goto_definition request received
+2023-05-12 02:25:27 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.DEF", query: None, fragment: None }, range: Range { start: Position { line: 162, character: 1 }, end: Position { line: 162, character: 2 } } }]))
+2023-05-12 02:25:32 - INFO: goto_definition request received
+2023-05-12 02:25:33 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.DEF", query: None, fragment: None }, range: Range { start: Position { line: 144, character: 1 }, end: Position { line: 144, character: 8 } } }]))
+2023-05-12 02:26:00 - INFO: goto_definition request received
+2023-05-12 02:26:00 - INFO: goto_definition result: None
+2023-05-12 02:26:12 - INFO: goto_definition request received
+2023-05-12 02:26:12 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.PRO", query: None, fragment: None }, range: Range { start: Position { line: 1846, character: 10 }, end: Position { line: 1846, character: 31 } } }]))
+2023-05-12 02:26:15 - INFO: goto_definition request received
+2023-05-12 02:26:16 - INFO: goto_definition result: Some(Array([]))
+2023-05-12 02:26:20 - INFO: goto_definition request received
+2023-05-12 02:26:21 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.DEF", query: None, fragment: None }, range: Range { start: Position { line: 432, character: 1 }, end: Position { line: 432, character: 16 } } }]))
+2023-05-12 02:26:31 - INFO: goto_definition request received
+2023-05-12 02:26:32 - INFO: goto_definition result: Some(Array([]))
+2023-05-12 02:26:34 - INFO: goto_definition request received
+2023-05-12 02:26:35 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.DEF", query: None, fragment: None }, range: Range { start: Position { line: 435, character: 1 }, end: Position { line: 435, character: 15 } } }]))
+2023-05-12 02:26:49 - INFO: goto_definition request received
+2023-05-12 02:26:49 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.PRO", query: None, fragment: None }, range: Range { start: Position { line: 1755, character: 10 }, end: Position { line: 1755, character: 33 } } }]))
+2023-05-12 02:26:56 - INFO: goto_definition request received
+2023-05-12 02:26:57 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.JAVASCRIPTS.PRO", query: None, fragment: None }, range: Range { start: Position { line: 595, character: 10 }, end: Position { line: 595, character: 18 } } }]))
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.ACTBJS.RAW
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PDF.APPREVIEW.DEF
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PDF.APPREVIEW.PRO
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.SSNSEARCH.PRO
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.GENJS.RAW
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.LOANFUNDING
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.SHOWHIDEJS.RAW
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/SCANNER.GETVARS.PRO
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/SCANNER.GETVARS.DEF
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/POSTALAUTOMATION.PRO
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/POSTALAUTOMATION.DEF
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PRINTDOCS
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.CSS
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.COMMON.PRO
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.DATEFORMATJS.RAW
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.COMMON.DEF
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.LIABILITIES
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.OTHERACTIONS.PRO
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.OTHERACTIONS.DEF
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PULLCRED
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.LOANCREATE
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.DECISION
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.FUNDINGINSTRUCTIONS
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.COLLATERAL
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.INIT
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.EFTXFRCREATE
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.ADDRESSVERIFY.PRO
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.JAVASCRIPTS.PRO
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PDF.APPREVIEW
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.COSIGNER
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.APPLICANTINFO
+2023-05-12 02:41:16 - INFO: Adding file: file:///home/phil/projects/poweron/ELA/ELA.PROJECT
+2023-05-12 02:41:35 - INFO: goto_definition request received
+2023-05-12 02:41:35 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.PROJECT", query: None, fragment: None }, range: Range { start: Position { line: 58, character: 1 }, end: Position { line: 58, character: 11 } } }]))
+2023-05-12 02:41:40 - INFO: goto_definition request received
+2023-05-12 02:41:40 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.PROJECT", query: None, fragment: None }, range: Range { start: Position { line: 58, character: 1 }, end: Position { line: 58, character: 11 } } }]))
+2023-05-12 02:41:45 - INFO: goto_definition request received
+2023-05-12 02:41:45 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.JAVASCRIPTS.PRO", query: None, fragment: None }, range: Range { start: Position { line: 595, character: 10 }, end: Position { line: 595, character: 18 } } }]))
+2023-05-12 02:41:47 - INFO: goto_definition request received
+2023-05-12 02:41:48 - INFO: goto_definition result: Some(Array([]))
+2023-05-12 02:41:52 - INFO: goto_definition request received
+2023-05-12 02:41:54 - INFO: goto_definition result: Some(Array([]))
+2023-05-12 02:41:59 - INFO: goto_definition request received
+2023-05-12 02:42:01 - INFO: goto_definition result: Some(Array([]))
+2023-05-12 02:42:10 - INFO: goto_definition request received
+2023-05-12 02:42:11 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.JAVASCRIPTS.PRO", query: None, fragment: None }, range: Range { start: Position { line: 539, character: 10 }, end: Position { line: 539, character: 19 } } }]))
+2023-05-12 02:42:13 - INFO: goto_definition request received
+2023-05-12 02:42:15 - INFO: goto_definition result: Some(Array([]))
+2023-05-12 02:42:21 - INFO: goto_definition request received
+2023-05-12 02:42:21 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.DEF", query: None, fragment: None }, range: Range { start: Position { line: 49, character: 1 }, end: Position { line: 49, character: 13 } } }]))
+2023-05-12 02:42:28 - INFO: goto_definition request received
+2023-05-12 02:42:29 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.PRO", query: None, fragment: None }, range: Range { start: Position { line: 1150, character: 10 }, end: Position { line: 1150, character: 19 } } }]))
+2023-05-12 02:42:31 - INFO: goto_definition request received
+2023-05-12 02:42:31 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.PRO", query: None, fragment: None }, range: Range { start: Position { line: 2004, character: 10 }, end: Position { line: 2004, character: 30 } } }]))
+2023-05-12 02:42:33 - INFO: goto_definition request received
+2023-05-12 02:42:33 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.PRO", query: None, fragment: None }, range: Range { start: Position { line: 1161, character: 10 }, end: Position { line: 1161, character: 28 } } }]))
+2023-05-12 02:42:35 - INFO: goto_definition request received
+2023-05-12 02:42:35 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.PRO", query: None, fragment: None }, range: Range { start: Position { line: 1982, character: 10 }, end: Position { line: 1982, character: 24 } } }]))
+2023-05-12 02:42:38 - INFO: goto_definition request received
+2023-05-12 02:42:39 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.DEF", query: None, fragment: None }, range: Range { start: Position { line: 446, character: 1 }, end: Position { line: 446, character: 20 } } }]))
+2023-05-12 02:42:41 - INFO: goto_definition request received
+2023-05-12 02:42:41 - INFO: goto_definition result: None
+2023-05-12 02:43:04 - INFO: goto_definition request received
+2023-05-12 02:43:05 - INFO: goto_definition result: Some(Array([]))
+2023-05-12 02:43:07 - INFO: goto_definition request received
+2023-05-12 02:43:08 - INFO: goto_definition result: Some(Array([]))
+2023-05-12 02:43:11 - INFO: goto_definition request received
+2023-05-12 02:43:11 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.PRO", query: None, fragment: None }, range: Range { start: Position { line: 1175, character: 10 }, end: Position { line: 1175, character: 26 } } }]))
+2023-05-12 02:43:14 - INFO: goto_definition request received
+2023-05-12 02:43:15 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.DEF", query: None, fragment: None }, range: Range { start: Position { line: 41, character: 1 }, end: Position { line: 41, character: 5 } } }]))
+2023-05-12 02:43:23 - INFO: goto_definition request received
+2023-05-12 02:43:24 - INFO: goto_definition result: Some(Array([Location { uri: Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: "/home/phil/projects/poweron/ELA/ELA.COMMON.DEF", query: None, fragment: None }, range: Range { start: Position { line: 223, character: 1 }, end: Position { line: 223, character: 8 } } }]))

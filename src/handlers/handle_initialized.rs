@@ -5,7 +5,7 @@ use tower_lsp::{
 };
 
 use crate::lsp::CONTEXT;
-use crate::utils::{analyze, get_poweron_files_in_dir, read_document_from_url};
+use crate::utils::{analyze, get_files_in_dir, read_document_from_url};
 
 pub async fn handle_initialized(client: &Client) {
     let workspace_folders = match client.workspace_folders().await {
@@ -40,14 +40,13 @@ pub async fn handle_initialized(client: &Client) {
                 format!("Adding workspace folder Folder: {}", folder.name),
             )
             .await;
-        let mut files_to_append =
-            match get_poweron_files_in_dir(folder.uri.to_string(), client).await {
-                Ok(files) => files,
-                Err(e) => {
-                    error!("Error getting files in dir: {}", e);
-                    return;
-                }
-            };
+        let mut files_to_append = match get_files_in_dir(folder.uri.to_string()).await {
+            Ok(files) => files,
+            Err(e) => {
+                error!("Error getting files in dir: {}", e);
+                return;
+            }
+        };
         files.append(&mut files_to_append);
     }
 
@@ -62,7 +61,7 @@ pub async fn handle_initialized(client: &Client) {
             }
         };
 
-        let text_document = read_document_from_url(url.clone(), client).await;
+        let text_document = read_document_from_url(url.clone()).await;
         let mut documents = match CONTEXT.documents.lock() {
             Ok(documents) => documents,
             Err(e) => {
