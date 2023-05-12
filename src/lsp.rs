@@ -4,14 +4,16 @@ use std::process::exit;
 use std::sync::Mutex;
 
 use lazy_static::lazy_static;
-use log::info;
+
 use tower_lsp::jsonrpc::Result;
 use tower_lsp::lsp_types::*;
 use tower_lsp::{Client, LanguageServer};
 use tree_sitter::{Parser, Tree};
 
-use crate::completions::poweron_functions::POWERON_FUNCTION_COMPLETIONS;
+use crate::handlers::handle_completion::handle_comlpetion;
 use crate::handlers::handle_definition;
+use crate::handlers::handle_did_change_text_document::handle_did_change_text_document;
+use crate::handlers::handle_document_symbol::handle_document_symbol;
 use crate::handlers::handle_initialized::handle_initialized;
 use crate::{handlers::handle_initialize::handle_initialize, parser::get_parser};
 
@@ -23,7 +25,6 @@ pub struct Context {
     pub documents: Mutex<HashMap<String, TextDocumentItem>>,
     pub parser: Mutex<Parser>,
     pub trees: Mutex<HashMap<String, Tree>>,
-    pub symbols: Mutex<Vec<SymbolInformation>>,
 }
 
 lazy_static! {
@@ -36,7 +37,6 @@ impl Context {
             documents: Mutex::new(HashMap::new()),
             parser: Mutex::new(get_parser()),
             trees: Mutex::new(HashMap::new()),
-            symbols: Mutex::new(Vec::new()),
         }
     }
 }
@@ -55,25 +55,32 @@ impl LanguageServer for Backend {
             .await;
     }
 
+    async fn did_change(&self, params: DidChangeTextDocumentParams) {
+        handle_did_change_text_document(&params);
+    }
+
+    async fn document_symbol(
+        &self,
+        params: DocumentSymbolParams,
+    ) -> Result<Option<DocumentSymbolResponse>> {
+        let result = handle_document_symbol(&params);
+        Ok(result)
+    }
+
     async fn shutdown(&self) -> Result<()> {
         exit(0)
     }
 
-    async fn completion(&self, _: CompletionParams) -> Result<Option<CompletionResponse>> {
-        let default_completions: Vec<CompletionItem> =
-            POWERON_FUNCTION_COMPLETIONS.values().cloned().collect();
-        info!("completion request received");
-        info!("default_completions: {:?}", default_completions);
-        Ok(Some(CompletionResponse::Array(default_completions)))
+    async fn completion(&self, params: CompletionParams) -> Result<Option<CompletionResponse>> {
+        let completions = handle_comlpetion(&params);
+        Ok(completions)
     }
 
     async fn goto_definition(
         &self,
         params: GotoDefinitionParams,
     ) -> Result<Option<GotoDefinitionResponse>> {
-        info!("goto_definition request received");
         let result = handle_definition::handle_definition(&params);
-        info!("goto_definition result: {:?}", result);
         Ok(result)
     }
 }

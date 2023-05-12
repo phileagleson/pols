@@ -288,3 +288,105 @@ pub fn get_basename_from_uri(uri: &str) -> String {
     };
     file_name.to_string()
 }
+
+pub fn word_at_point(uri: &Url, line: &u32, col: &u32) -> Option<String> {
+    info!("looking for word at point");
+    let documents = match CONTEXT.documents.lock() {
+        Ok(documents) => documents.clone(),
+        Err(e) => {
+            error!("Error getting documents: {}", e.to_string());
+            return None;
+        }
+    };
+
+    let document = match documents.get(uri.as_str()) {
+        Some(document) => document.clone(),
+        None => {
+            error!("No document found for {}", uri);
+            return None;
+        }
+    };
+
+    let text = document.text.as_str();
+    let lines = text.lines().collect::<Vec<&str>>();
+    let line = match lines.get(*line as usize) {
+        Some(line) => line,
+        None => {
+            error!("No line found for {}", line);
+            return None;
+        }
+    };
+
+    info!("found line: {}", line);
+    let words_to_point = line.split_at(*col as usize).0;
+    let word = match words_to_point.split_whitespace().next() {
+        Some(word) => word,
+        None => {
+            error!("No word found for {}", col);
+            return None;
+        }
+    };
+
+    info!("found word: {}", word);
+    Some(word.to_string())
+}
+
+pub fn get_inc_files(document: &TextDocumentItem) -> Vec<String> {
+    let query_string = "(include_statement (string_literal) @inc)";
+    // find all inc def files
+    let source = document.text.as_str();
+    let trees = match CONTEXT.trees.lock() {
+        Ok(trees) => trees.clone(),
+        Err(e) => {
+            error!("error getting trees lock: {}", e);
+            return Vec::new();
+        }
+    };
+
+    let tree = match trees.get(&document.uri.to_string()) {
+        Some(tree) => tree.clone(),
+        None => {
+            error!(
+                "error getting tree for uri: {} on line {}",
+                document.uri, 312
+            );
+            return Vec::new();
+        }
+    };
+    let lang = tree.language();
+    let mut cursor = QueryCursor::new();
+    let query = match Query::new(lang, query_string) {
+        Ok(query) => query,
+        Err(e) => {
+            error!("error creating query: {}", e);
+            return Vec::new();
+        }
+    };
+
+    let matches = cursor.matches(&query, tree.root_node(), source.as_bytes());
+    let mut inc_files: Vec<String> = Vec::new();
+    matches.for_each(|m| {
+        let inc = match m.captures[0].node.utf8_text(source.as_bytes()) {
+            Ok(inc) => inc,
+            Err(e) => {
+                error!("error getting utf8 text: {}", e);
+                return;
+            }
+        };
+        let inc = inc.replace("\"", "");
+        // see if the document exist in the workspace
+        let documents = match CONTEXT.documents.lock() {
+            Ok(documents) => documents.clone(),
+            Err(e) => {
+                error!("error getting documents lock: {}", e);
+                return;
+            }
+        };
+        documents.iter().for_each(|(uri, doc)| {
+            if doc.uri.to_string().contains(&inc) {
+                inc_files.push(uri.to_string());
+            }
+        });
+    });
+    inc_files
+}

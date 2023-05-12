@@ -46,7 +46,7 @@ pub fn handle_initialize() -> InitializeResult {
             implementation_provider: None,
             references_provider: None,
             document_highlight_provider: None,
-            document_symbol_provider: None,
+            document_symbol_provider: Some(OneOf::Left(true)),
             workspace_symbol_provider: None,
             code_action_provider: None,
             code_lens_provider: None,

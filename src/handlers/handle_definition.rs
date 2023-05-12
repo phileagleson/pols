@@ -6,7 +6,7 @@ use tree_sitter::{Point, Query, QueryCursor};
 
 use crate::{
     lsp::CONTEXT,
-    utils::{is_def_file, is_poweron_driver},
+    utils::{get_inc_files, is_def_file, is_poweron_driver},
 };
 
 #[derive(Clone, Debug)]
@@ -304,64 +304,4 @@ fn get_files_to_seach(document: &TextDocumentItem) -> Vec<String> {
     }
 
     files_to_search
-}
-
-pub fn get_inc_files(document: &TextDocumentItem) -> Vec<String> {
-    let query_string = "(include_statement (string_literal) @inc)";
-    // find all inc def files
-    let source = document.text.as_str();
-    let trees = match CONTEXT.trees.lock() {
-        Ok(trees) => trees.clone(),
-        Err(e) => {
-            error!("error getting trees lock: {}", e);
-            return Vec::new();
-        }
-    };
-
-    let tree = match trees.get(&document.uri.to_string()) {
-        Some(tree) => tree.clone(),
-        None => {
-            error!(
-                "error getting tree for uri: {} on line {}",
-                document.uri, 312
-            );
-            return Vec::new();
-        }
-    };
-    let lang = tree.language();
-    let mut cursor = QueryCursor::new();
-    let query = match Query::new(lang, query_string) {
-        Ok(query) => query,
-        Err(e) => {
-            error!("error creating query: {}", e);
-            return Vec::new();
-        }
-    };
-
-    let matches = cursor.matches(&query, tree.root_node(), source.as_bytes());
-    let mut inc_files: Vec<String> = Vec::new();
-    matches.for_each(|m| {
-        let inc = match m.captures[0].node.utf8_text(source.as_bytes()) {
-            Ok(inc) => inc,
-            Err(e) => {
-                error!("error getting utf8 text: {}", e);
-                return;
-            }
-        };
-        let inc = inc.replace("\"", "");
-        // see if the document exist in the workspace
-        let documents = match CONTEXT.documents.lock() {
-            Ok(documents) => documents.clone(),
-            Err(e) => {
-                error!("error getting documents lock: {}", e);
-                return;
-            }
-        };
-        documents.iter().for_each(|(uri, doc)| {
-            if doc.uri.to_string().contains(&inc) {
-                inc_files.push(uri.to_string());
-            }
-        });
-    });
-    inc_files
 }
