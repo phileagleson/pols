@@ -1,0 +1,11 @@
+appenders: 
+  my_file_logger: 
+    kind: file 
+    path: "/home/phil/projects/pols/logs/pols.log"
+    encoder: 
+      pattern: "{d(%Y-%m-%d %H:%M:%S)(utc)} - {h({l})}: {m}{n}"
+
+root: 
+  level: trace 
+  appenders: 
+    - my_file_logger
