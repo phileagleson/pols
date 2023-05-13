@@ -26,7 +26,7 @@ pub fn handle_initialize() -> InitializeResult {
             position_encoding: None,
             text_document_sync: Some(TextDocumentSyncCapability::Kind(TextDocumentSyncKind::FULL)),
             selection_range_provider: None,
-            hover_provider: None,
+            hover_provider: Some(HoverProviderCapability::Simple(true)),
             completion_provider: Some(CompletionOptions {
                 resolve_provider: Some(true),
                 trigger_characters: Some(Vec::from([

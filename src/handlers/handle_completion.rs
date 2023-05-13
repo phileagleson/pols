@@ -54,10 +54,10 @@ fn handle_database_field(params: &CompletionParams) -> Option<CompletionResponse
                         label: field.mnemonic.clone().to_uppercase(),
                         label_details: Some(CompletionItemLabelDetails {
                             detail: None,
-                            description: Some(field.description.clone()),
+                            description: Some(field.description.to_string()),
                         }),
                         kind: Some(CompletionItemKind::FIELD),
-                        detail: Some(field.details.clone()),
+                        detail: Some(field.details.to_string()),
                         deprecated: Some(false),
                         insert_text: Some(field.mnemonic.clone().to_string().to_uppercase()),
                         insert_text_format: Some(InsertTextFormat::PLAIN_TEXT),

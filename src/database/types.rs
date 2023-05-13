@@ -1,13 +1,13 @@
 #[derive(Debug, Clone)]
 pub struct DatabaseField {
     pub field_number: u32,
-    pub mnemonic: String,
+    pub mnemonic: &'static str,
     pub data_type: DataType,
-    pub help_file: String,
+    pub help_file: &'static str,
     pub default_control: bool,
-    pub default_value: String,
-    pub description: String,
-    pub details: String,
+    pub default_value: &'static str,
+    pub description: &'static str,
+    pub details: &'static str,
     pub length: Option<u32>,
 }
 

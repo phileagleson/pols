@@ -11,10 +11,10 @@ use tower_lsp::{Client, LanguageServer};
 use tree_sitter::{Parser, Tree};
 
 use crate::handlers::handle_completion::handle_comlpetion;
-use crate::handlers::handle_definition;
 use crate::handlers::handle_did_change_text_document::handle_did_change_text_document;
 use crate::handlers::handle_document_symbol::handle_document_symbol;
 use crate::handlers::handle_initialized::handle_initialized;
+use crate::handlers::{handle_definition, handle_hover::handle_hover};
 use crate::{handlers::handle_initialize::handle_initialize, parser::get_parser};
 
 pub struct Backend {
@@ -65,6 +65,11 @@ impl LanguageServer for Backend {
     ) -> Result<Option<DocumentSymbolResponse>> {
         let result = handle_document_symbol(&params);
         Ok(result)
+    }
+
+    async fn hover(&self, params: HoverParams) -> Result<Option<Hover>> {
+        let res = handle_hover(&params);
+        Ok(res)
     }
 
     async fn shutdown(&self) -> Result<()> {
