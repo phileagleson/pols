@@ -57,7 +57,7 @@ fn handle_database_field(params: &CompletionParams) -> Option<CompletionResponse
                             description: Some(field.description.to_string()),
                         }),
                         kind: Some(CompletionItemKind::FIELD),
-                        detail: Some(field.details.to_string()),
+                        detail: None,
                         deprecated: Some(false),
                         insert_text: Some(field.mnemonic.clone().to_string().to_uppercase()),
                         insert_text_format: Some(InsertTextFormat::PLAIN_TEXT),
