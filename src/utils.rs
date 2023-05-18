@@ -8,49 +8,35 @@ use crate::lsp::CONTEXT;
 
 type MyResult<T> = Result<T, Box<dyn Error>>;
 
-pub async fn get_files_in_dir(uri: String) -> MyResult<Vec<String>> {
-    let mut files: Vec<String> = Vec::new();
-    let path = uri.replace("file://", "");
-    let path = Path::new(&path);
-    let files_in_path = match fs::read_dir(path) {
-        Ok(files_in_path) => files_in_path,
-        Err(e) => {
-            error!("Error reading directory: {}", e.to_string());
-            return Ok(files);
-        }
-    };
-    for entry in files_in_path {
-        let entry = match entry {
-            Ok(entry) => entry,
-            Err(e) => {
-                error!("Error reading entry: {}", e.to_string());
-                continue;
-            }
-        };
-        let file_path = entry.path();
-        if file_path.is_file() {
-            let file_name = match file_path.file_name() {
-                Some(file_name) => file_name,
-                None => {
-                    error!("Error getting file name");
-                    continue;
+pub fn get_files_in_dir(dir: String) -> MyResult<Vec<String>> {
+    let mut files = Vec::new();
+    let dir = dir.replace("file://", "");
+    let dir = Path::new(&dir);
+
+    if dir.is_dir() {
+        for entry in fs::read_dir(dir)? {
+            let entry = entry?;
+            let path = entry.path();
+
+            if path.is_dir() {
+                let dir_name = match path.file_name() {
+                    Some(dir_name) => dir_name,
+                    None => continue,
+                };
+                let dir_name = dir.join(dir_name);
+                let dir_name = dir_name.to_string_lossy().to_string();
+                files.extend(get_files_in_dir(dir_name)?);
+            } else {
+                if let Some(file_path) = path.to_str() {
+                    let file_path = "file://".to_string() + file_path;
+                    let file_path = file_path.replace("\\", "/");
+                    files.push(file_path.to_string());
                 }
-            };
-            let file_name = match file_name.to_str() {
-                Some(file_name) => file_name,
-                None => {
-                    error!("Error getting file name");
-                    continue;
-                }
-            };
-            if !file_name.starts_with(".") {
-                let file_name =
-                    "file://".to_string() + &file_path.to_str().unwrap().replace("\\", "/");
-                files.push(file_name.to_string());
-                info!("Adding file: {}", file_name);
             }
         }
     }
+
+    info!("Found files: {:?}", files);
 
     Ok(files)
 }

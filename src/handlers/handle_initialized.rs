@@ -40,7 +40,7 @@ pub async fn handle_initialized(client: &Client) {
                 format!("Adding workspace folder Folder: {}", folder.name),
             )
             .await;
-        let mut files_to_append = match get_files_in_dir(folder.uri.to_string()).await {
+        let mut files_to_append = match get_files_in_dir(folder.uri.to_string()) {
             Ok(files) => files,
             Err(e) => {
                 error!("Error getting files in dir: {}", e);
